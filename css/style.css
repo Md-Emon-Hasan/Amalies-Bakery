@@ -1,0 +1,240 @@
+
+/** navbar **/
+
+.nav-main-area{
+    background: linear-gradient(rgba(34,34,34,0.7),rgba(34,34,34,0.7)),url('../img/17.jpg');
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding-top: 20px;
+    position: relative;
+}
+
+.nav-main-area .navbar{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-main-area a .first-icon
+.nav-main-area a .second-icon{
+    text-transform: uppercase;
+    color: transparent;
+    text-decoration: none;
+}
+
+.nav-main-area .navbar-brand .logo1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+    line-height: 0;
+    margin-bottom: 0px;
+}
+
+.nav-main-area .navbar-brand .logo2{
+    color: #F8AF00;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-left: -18px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-main-area .navbar-brand span{
+    color: #fff;
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: lighter;
+    display: inline;
+    line-height: 0;
+    text-transform: none;
+}
+
+.nav-main-area .first-icon{
+    margin-left: 25px;
+    color: #fff;
+    margin-right: 2px;
+}
+
+.nav-main-area .second-icon{
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-main-area .first-icon:hover,
+.nav-main-area .second-icon:hover{
+    color: #F8AF00;
+    transition: 0.3s;
+}
+
+.nav-main-area .nav-link{
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.nav-main-area .nav-link:hover{
+    color: #F8AF00;
+}
+
+.nav-main-area .nav-link:hover:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    top: 12px;
+    right: auto;
+    bottom: auto;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    content: "";
+    background: url('../img/1.png') transparent no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.3s;
+}
+
+/** carousel **/
+
+.nav-main-area .carousel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.nav-main-area h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
+
+.nav-main-area p{
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.nav-main-area h5{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-main-area h5:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background: #F8AF00;
+    top: 25px;
+    bottom: auto;
+    left: auto;
+    right: 290px;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    height: 20px;
+    width: 20px;
+    opacity: 0.7;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    bottom: -150px;
+    top: auto;
+    right: auto;
+    left: calc(35% - 20px);
+}
+
+.carousel-control-next{
+    position: absolute;
+    bottom: -150px;
+    top: auto;
+    left: auto;
+    right: calc(35% - 20px);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-image: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+}
+
+/** owl carousel **/
+
+.slider{
+    height: 20px;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    left: 580px;
+    right: auto;
+    top: auto;
+    bottom: 60px;
+}
+
+.slider .owl-item .slider-card{
+    color: #fff;
+    margin: 8px;
+    transform: scale(0.5);
+    opacity: 0.5;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.slider .owl-item.active.center .slider-card{
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+/** card **/
+
+.card1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card{
+    position: relative;
+}
+
+.card-body:after{
+    position: absolute;
+    top: calc(50% - 20px);
+    bottom: 0;
+    left: -16px;
+    right: 0;
+    height: 40px;
+    width: 3px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: #84AB00;
+    content: "";
+}
+
+.card1:first-child .card-body:after{
+    display: none;
+}
